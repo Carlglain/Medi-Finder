@@ -1,11 +1,19 @@
 import React from 'react'
 import SignUp from './Pages/SignUp';
+import { Route,Routes } from 'react-router-dom';
+import Login from './Pages/Login';
+import HomePage from './Pages/HomePage';
+import MediLogo from './Components/MediLogo'
 function App() {
   return (
     <div>
-      <SignUp />
-      {/* <h1>Welcome to medifinder </h1>
-      <p>Find hospitals and pharmacies around you easily</p> */}
+      
+     <MediLogo />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/signup' element={<SignUp />} />
+        <Route path='/login' element={<Login />} />
+      </Routes>
     </div>
   )
 }

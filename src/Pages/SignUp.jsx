@@ -1,8 +1,14 @@
 import React from 'react'
 import "./registration.css"
+// import MediLogo from '../Components/MediLogo'
+import { Link } from 'react-router-dom'
+import { Field, Formik, Form} from 'formik'
+import * as Yup from 'yup'
 function SignUp() {
+  const validationSchema
   return (
     <div className='signup-container'>
+    
       <form className='signup-form'>
         <label htmlFor="l1">First Name</label>
         <input id='l1' type="text" placeholder='john' name='FName'/>
@@ -19,7 +25,7 @@ function SignUp() {
         <input id='l5' type="text" placeholder='molyko' />
         <button>Sign Up</button>
         <p>Already have an Account?</p>
-        <button>Login</button>
+        <Link to='/login'>Login</Link>
       </form>
     </div>
   )
