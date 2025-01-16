@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom'
 import { Field, Formik, Form} from 'formik'
 import * as Yup from 'yup'
 function SignUp() {
-  const validationSchema
+
+  
   return (
     <div className='signup-container'>
     
