@@ -3,12 +3,12 @@ import SignUp from './Pages/SignUp';
 import { Route,Routes } from 'react-router-dom';
 import Login from './Pages/Login';
 import HomePage from './Pages/HomePage';
-import MediLogo from './Components/MediLogo'
+import NavBar from './Components/ui/NavBar';
 function App() {
   return (
     <div>
-      
-     <MediLogo />
+      <NavBar />
+    
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/signup' element={<SignUp />} />

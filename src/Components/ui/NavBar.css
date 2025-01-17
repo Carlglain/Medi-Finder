@@ -1,0 +1,21 @@
+header{
+   max-width: 100%;
+    position: fixed-top;
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    text-align: end;
+
+}
+
+.na-link{
+    text-decoration: none;
+    display: flex;
+    color: black;
+}
+ul li {
+    display: flex;
+    flex-direction: row;
+    }
