@@ -2,7 +2,9 @@ import React from 'react'
 import { NavLink} from 'react-router-dom';
 import './NavBar.css';
 import MediLogo from '../MediLogo';
-
+import CloseIcon from '@mui/icons-material/Close';
+import MenuIcon from '@mui/icons-material/Menu';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 function NavBar() {
   return (
     <header>
@@ -10,15 +12,15 @@ function NavBar() {
       <nav>
         <ul>
           {/* replace Go with a material ui search icon */}
-          <li><span ><input  /> <button>Go</button>  </span></li>
+          <li><span className='na-link' ><input  /> <button>Go</button>  </span></li>
           <li><NavLink className='na-link' to='#'>Emergency</NavLink></li>
           <li><NavLink className='na-link' to='#'>Drugs</NavLink></li>
           <li><NavLink className='na-link' to='#'>About Medifinder</NavLink></li>
-          <li><NavLink className='na-link' to='#'>Login</NavLink></li>
+          <li><NavLink id='l-user' className='na-link' to='#'>Login </NavLink> <label htmlFor="l-user"><AccountCircleIcon fontSize='medium'/></label></li>
           {/* use material ui icons to open or close the nav bar */}
-          {/* <button>Close</button>  */}
+          <button><CloseIcon /></button> 
         </ul>
-        {/* <button>Open</button> */}
+        <button><MenuIcon /></button>
       </nav>
     </header>
   )
