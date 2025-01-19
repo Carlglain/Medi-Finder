@@ -10,10 +10,12 @@ header{
     background-color: blue;
     margin: 0px;
     top: 0%;
+    left: 0%;
 
 
 }
 nav{
+    padding-right: 3rem;
     /* padding-left: 5%; */
     text-align: end;
 
