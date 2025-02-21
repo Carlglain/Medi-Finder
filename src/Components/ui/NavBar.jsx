@@ -8,18 +8,18 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 function NavBar() {
   return (
     <header>
-     <MediLogo />
+    <NavLink style={{color: 'black', textDecoration:'none'}} to='/'><MediLogo/> </NavLink>
       <nav>
         <ul>
-          {/* replace Go with a material ui search icon */}
-          <li><span className='na-link' ><input  /> <button>Go</button>  </span></li>
-          <li><NavLink className='na-link' to='#'>Emergency</NavLink></li>
-          <li><NavLink className='na-link' to='#'>Drugs</NavLink></li>
-          <li><NavLink className='na-link' to='#'>About Medifinder</NavLink></li>
-          <li><NavLink id='l-user' className='na-link' to='#'>Login </NavLink> <label htmlFor="l-user"><AccountCircleIcon fontSize='medium'/></label></li>
+          <li><NavLink className='na-link' to='/pharmacy'>Pharmacy</NavLink></li>
+          <li><NavLink className='na-link' to='/emergency'>Emergency</NavLink></li>
+          <li><NavLink className='na-link' to='/medics'>Medics</NavLink></li>
+          <li><NavLink id='l-user' className='na-link' to='/account'>My account </NavLink> <label htmlFor="l-user"><AccountCircleIcon fontSize='medium'/></label></li>
           {/* use material ui icons to open or close the nav bar */}
           <button><CloseIcon /></button> 
         </ul>
+         {/* replace Go with a material ui search icon */}
+        <div ><input  /> <button>Go</button>  </div>
         <button><MenuIcon /></button>
       </nav>
     </header>

@@ -1,0 +1,22 @@
+.service-container{
+    display:flex;
+    margin: 1rem;
+    
+}
+.image{
+margin-right: 24px;
+}
+.description{
+position: relative;
+bottom: 17px;
+width: 25vw;
+}
+
+@media (max-width: 600px) {
+    .image{
+        width: 30vw;
+    }
+    .description{
+        width: 80vw;
+    }
+}

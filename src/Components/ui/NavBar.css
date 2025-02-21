@@ -11,7 +11,7 @@ header{
     margin: 0px;
     top: 0%;
     left: 0%;
-
+  
 
 }
 nav{
@@ -47,3 +47,7 @@ ul li {
     border-color: black;
     border-radius: 5px;
 }
+.na-link.active {
+    font-weight: bold;
+    color: rgb(0, 255, 21); /* Active link color */
+  }
