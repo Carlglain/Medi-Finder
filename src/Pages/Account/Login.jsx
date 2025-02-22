@@ -2,8 +2,22 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import './registration.css'
 function Login() {
+  const validationSchema = Yup.object({
+  email: Yup.string()
+    .email('Invalid email format')
+    .required('Email is required'),
+  password: Yup.string()
+    .min(6, 'Password must be at least 6 characters')
+    .required('Password is required'),
+});
+
   return (
     <div className='signup-container'>
+      <Formik
+      initialValues={{ email: '', password: '' }}
+      >
+
+      </Formik>
       <form className='signup-form' >
         <label htmlFor="l1">Email</label>
         <input type="text" placeholder='example@gmail.com' name='email'/>

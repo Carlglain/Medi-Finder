@@ -1,6 +1,7 @@
 import React from 'react'
 import "./service-offered.css"
 function ServiceOffered({image,title,content}) {
+  console.log("Hellloujujuijimijijmk")
   return (
     <div className='service-container'>
       <img className='image' src={image} alt="broken image" />

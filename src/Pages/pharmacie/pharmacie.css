@@ -1,8 +1,17 @@
-.pharmacie-container{
+.pharmacie-page{
     margin-top: 35%;
 }
-.pharmacie{
-    margin-top: 5%;
+.pharmacie-container{
+    margin: 3%;
+    width: 320px;
     border-style:solid;
     border-radius: 25px;
+    text-align: center;
+}
+.logo{
+    margin: 2px;
+    width: 70vw;
+    border-radius: 25px;  
+ 
+   
 }

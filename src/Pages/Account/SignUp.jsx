@@ -5,11 +5,29 @@ import { Link } from 'react-router-dom'
 import { Field, Formik, Form} from 'formik'
 import * as Yup from 'yup'
 function SignUp() {
-
+const validationSchema = Yup.object({
+  FName: Yup.string().required('First Name is required'),
+  LName: Yup.string().required('Last Name is required'),
+  phone: Yup.number().required('Phone Number is required'),
+  email: Yup.string().email('Invalid email').required('Email is required'),
+  address: Yup.string().required('Address is required'),
+})
   
   return (
     <div className='signup-container'>
-    
+    <Formik 
+    initialValues={
+      {
+        FName: '',
+        LName: '',
+        phone: '',
+        email: 'example@example.com',
+        address: '',
+      }
+    }
+    >
+
+    </Formik>
       <form className='signup-form'>
         <label htmlFor="l1">First Name</label>
         <input id='l1' type="text" placeholder='john' name='FName'/>
