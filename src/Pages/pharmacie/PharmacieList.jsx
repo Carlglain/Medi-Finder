@@ -20,9 +20,19 @@ function PharmacieList() {
       state: "Open",
       id: 2,
     },
+    {
+      logo: Logos.pLogo1,
+      name: "ENAMEN",
+      rating: 4.6,
+      type: "Pharmacy",
+      state: "Open",
+      id: 1,
+    },
   ];
   return (
-    <div className="pharmacie-page">
+    <div className="body">
+    <div className="pharmacie-page ">
+      
       {list.map((pharmacie) => (
         <div>
           <Pharmacy
@@ -35,6 +45,7 @@ function PharmacieList() {
           />
         </div>
       ))}
+    </div>
     </div>
   );
 }

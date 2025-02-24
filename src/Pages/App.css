@@ -1,0 +1,32 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.home-page{
+    margin-top: 8.8%;
+
+}
+.header-content{
+  
+    color: rgb(7, 7, 7);
+    padding: 10px;
+    text-align: center;
+    width: 90vw;
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+    color:rgb(38, 0, 255);
+}
+.call-to-action-btn{
+    background: rgb(248, 250, 248);
+    border-radius: 25px;
+    width: max-content;
+    font-size: larger;
+    
+}
+.h1{
+margin-left: 1.9rem;
+text-align: center;
+}

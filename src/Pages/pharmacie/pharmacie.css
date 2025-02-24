@@ -1,17 +1,46 @@
+.body{
+    background-color: rgb(197, 231, 220);
+    height: 100vh;
+    width: 100vw;
+    margin-top: -10px;
+    padding-top: 15px;
+}
 .pharmacie-page{
-    margin-top: 35%;
+    margin-top: 20%;
+    
 }
 .pharmacie-container{
     margin: 3%;
-    width: 320px;
+    width: 80vw;
     border-style:solid;
     border-radius: 25px;
     text-align: center;
 }
 .logo{
-    margin: 2px;
-    width: 70vw;
+    margin: 5px auto 0;
+    width: 30vw;
     border-radius: 25px;  
  
    
+}
+.link-pharmacy{
+    color: black;
+}
+@media (min-width: 768px){
+    .pharmacie-container{
+        background: rgb(249, 250, 250);
+        width: 25vw;
+    }
+    .logo{
+        width: 2vw;
+        margin: 5px auto 0;
+    }
+    .pharmacie-page{
+        
+        margin-left: 6%;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+    }
 }

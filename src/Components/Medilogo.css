@@ -10,6 +10,10 @@
 
 }
 .mediLogo img{
-    width: 6rem;
-    height: 5rem;
+    width: 5rem;
+    height: 4rem;
+}
+.mediLogo h1{
+    font-size: 2rem;
+    color: #fdfafd;
 }

@@ -11,6 +11,10 @@ position: relative;
 bottom: 17px;
 width: 25vw;
 }
+.link-dec{
+    text-decoration: dashed;
+    color: black;
+}
 
 @media (max-width: 600px) {
     .image{

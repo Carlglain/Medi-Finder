@@ -1,10 +1,10 @@
 import React from 'react';
 import './pharmacie.css';
-
+import { Link } from 'react-router-dom';
 function Pharmacy({ logo, name, rating, type, state }) {
   return (
     <div className='pharmacie-container'>
-      
+      <Link className='link-pharmacy' to={name}>
         <img className='logo' src={logo} alt={`${name} logo`} />
         
         <div className='content'>
@@ -14,6 +14,7 @@ function Pharmacy({ logo, name, rating, type, state }) {
         <p>Status: {state}</p>
         
       </div>
+    </Link>
     </div>
   );
 }
