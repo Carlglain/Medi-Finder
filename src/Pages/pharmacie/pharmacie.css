@@ -1,16 +1,17 @@
 .body{
     background-color: rgb(197, 231, 220);
-    height: 100vh;
+    height: 200%;
     width: 100vw;
     margin-top: -10px;
     padding-top: 15px;
 }
 .pharmacie-page{
-    margin-top: 20%;
+    margin-top: 25%;
     
 }
 .pharmacie-container{
-    margin: 3%;
+    margin: 5% 10%;
+  
     width: 80vw;
     border-style:solid;
     border-radius: 25px;

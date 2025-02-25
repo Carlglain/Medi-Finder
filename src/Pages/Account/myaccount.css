@@ -1,3 +1,17 @@
 .account-container{
-    margin-top: 35%;
+    margin-top: 20%;
+    margin: 1.6rem;
+}
+.user-name{
+  display: block;  
+  margin-left: 30px;
+}
+.account-content{
+    text-align: center;
+}
+
+@media (min-width: 768px){
+   .account-container{
+     margin-top: 11%;
+    }
 }
