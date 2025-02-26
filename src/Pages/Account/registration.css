@@ -53,3 +53,9 @@
         width: 95%; /* Full width on smaller screens */
     }
 }
+@media (min-width: 1024px) {
+    .signup-container{
+        margin-top: 10px;
+        padding-top: 15%;
+    }
+}

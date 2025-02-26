@@ -27,6 +27,12 @@
 .link-pharmacy{
     color: black;
 }
+.loading{
+    color :red;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 25% 30% 0;
+}
 @media (min-width: 768px){
     .pharmacie-container{
         background: rgb(249, 250, 250);
@@ -43,5 +49,10 @@
         display: flex;
         flex-direction: row;
         gap: 5%;
+    }
+    .loading{
+        
+        font-size: 5rem;
+        margin: 25% 30% 0;
     }
 }

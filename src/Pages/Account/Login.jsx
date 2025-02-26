@@ -1,8 +1,9 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import './registration.css'
 import { Formik, Form, Field, ErrorMessage} from 'formik';
 import * as Yup from 'yup'
+import axios from 'axios';
 function Login() {
   const validationSchema = Yup.object({
   email: Yup.string()
@@ -13,6 +14,7 @@ function Login() {
     .required('Password is required'),
 });
 
+const navigate =useNavigate()
   
 
   return (
@@ -22,8 +24,15 @@ function Login() {
       validationSchema={validationSchema}
       validateOnChange={true}
       validateOnBlur={true}
-      onSubmit={(values, {resetForm}) => {
-        // form logic here
+      onSubmit={ async(values, {resetForm}) => {
+        try{
+        const response = await axios.post( "http://localhost/api/auth/login", values)
+        console.log("Login successfull")
+          navigate('/pharmacy') 
+      }
+      catch(err){
+        console.log("Error:" + err)
+      }
         console.log(values)
         resetForm()
       }}
@@ -38,25 +47,18 @@ function Login() {
 
             <div>
             <label htmlFor="l2">Password</label>
-            <Field type="text" id='l2' placeholder='1tHis97semo.' name='password'/>
+            <Field type="password" id='l2' placeholder='1tHis97semo.' name='password'/>
             <ErrorMessage name="password" component="div" className='error' />
             </div>
             
-            <button type='submit' disabled={isValid} >Login</button>
+            <button type='submit' disabled={!isValid || !dirty}>Login</button>
             <div>Or register <Link to='/signup'>here</Link></div>
 
           
           </Form>
           )}
       </Formik>
-      {/* <form className='signup-form' >
-        <label htmlFor="l1">Email</label>
-        <input type="text" placeholder='example@gmail.com' name='email'/>
-        <label htmlFor="l2">Password</label>
-        <input type="text" id='l2' placeholder='@tHis97semo.' name='password'/>
-        <button>Login</button>
-        <div>Or register <Link to='/signup'>here</Link></div>
-      </form> */}
+
     </div>
   )
 }
