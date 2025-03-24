@@ -3,7 +3,8 @@ import Pharmacy from "./Pharmacy";
 import * as Logos from "../../Images/images";
 import "./pharmacie.css"
 import axios from 'axios';
-
+import Search from "../../Components/Search";
+// const ApiUrl = `${import.meta.env.VITE_BASE_URL}/api/${url}`
 function PharmacieList() {
   const [pharmacies,setPharmacies] =useState([])
   const [loading,setLoading] = useState(true)
@@ -11,7 +12,7 @@ function PharmacieList() {
   useEffect(()=>{
     const FetchData = async ()=>{
     try{
-      const response = await axios.get("http://localhost/api/units")
+      const response = await axios.get("https://rrn24.techchantier.site/Medi-finder/public/api/medical-facilities")
       console.log(response.data)
       setPharmacies(response.data)
     }
@@ -41,46 +42,21 @@ function PharmacieList() {
       return "Close"
     }
   }
-  const list = [
-    {
-      logo: Logos.pLogo1,
-      name: "ENAMEN",
-      rating: 4.6,
-      type: "Pharmacy",
-      state: pharmacyStatus(),
-      id: 1,
   
-    },
-    {
-      logo: Logos.pLogo2,
-      name: "Mount Zion",
-      rating: 4.7,
-      type: "Pharmacy",
-      state: pharmacyStatus(),
-      id: 2,
-    },
-    {
-      logo: Logos.pLogo1,
-      name: "ENAMEN",
-      rating: 4.6,
-      type: "Pharmacy",
-      state: pharmacyStatus(),
-      id: 3,
-    },
-  ];
-
-
   if(loading){
     return <div className="loading">Loading...</div>
   }
   return (
     <div className="body">
+      <div className="search">
+      <Search />
+      </div>
     <div className="pharmacie-page ">
-      
-      {list.map((pharmacie) => (
+    
+      {pharmacies.map((pharmacie) => (
         <div>
           <Pharmacy
-            key={pharmacie.id}
+            key={pharmacie.user.id}
             logo={pharmacie.logo}
             name={pharmacie.name}
             type={pharmacie.type}

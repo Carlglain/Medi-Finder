@@ -7,7 +7,7 @@ function Pharmacy({ logo, name, rating, type, state }) {
       <Link className='link-pharmacy' to={name}>
         <img className='logo' src={logo} alt={`${name} logo`} />
         
-        <div className='content'>
+        <div className='pharmacie-details'>
         <h3>{name}</h3>
         <p>Rating: {rating}</p>
         <p>Type: {type}</p>

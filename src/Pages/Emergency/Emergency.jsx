@@ -3,8 +3,10 @@ import "./emergency.css"
 function Emergency() {
   return (
     <div className='emergency-container'>
-      show emergency contact and possibility to call 
-      possibility to add emergency contact
+     <h1 className='mainTitle'>Emergency Contacts</h1>
+     <p className='gov-em-contact' >
+        In case of Emergency dail: Medical assistance:119  
+     </p>
     </div>
   )
 }

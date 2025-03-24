@@ -3,30 +3,73 @@ body{
     margin: 0;
     padding: 0;
 }
+.home-page-section{
+    margin: 1rem;
+    background-color: white; /* White background */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 10px; /* Inner spacing */
+    transition: box-shadow 0.3s; /* Smooth shadow transition */
+    margin-bottom: 2%;
+}
 .home-page{
     margin-top: 20%;
-
+    background-color: rgb(250, 252, 251);
+    
 }
 .header-content{
-  
-    color: rgb(7, 7, 7);
-    padding: 10px;
+    /* background-image: url("../Images/darkbgimg.jpeg"); */
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(245, 243, 243);
+    padding: 5px 2px;
     text-align: center;
-    width: 90vw;
-    font-size: 1rem;
+    width: 100vw;
+    font-size: 0.99rem;
+    
+}
+.services{
+    margin: 20px 50px 15px;
 }
 a{
     text-decoration: none;
-    color:rgb(38, 0, 255);
+    color:rgb(29, 157, 243);
 }
 .call-to-action-btn{
-    background: rgb(248, 250, 248);
-    border-radius: 25px;
+    
     width: max-content;
     font-size: larger;
+    background-color: white; /* White background */
+  border: 2px solid #ccc; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px 20px; /* Top/bottom and left/right padding */
+  /* Text color */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
     
 }
 .h1{
 margin-left: 1.9rem;
 text-align: center;
+}
+@media (min-width: 767px) {
+    .home-page{
+        margin-top: 7%;
+        background-color: rgb(245, 241, 241);
+    }
+    .header-content{
+        /* background-image: url("../Images/pdarkbackground.webp"); */
+        color: rgb(245, 243, 243);
+    }
+    .services{
+        margin: 20px 500px 15px;
+    }
+    .conv-statement{
+        text-align: center;
+       margin-top:25px;
+    }
 }

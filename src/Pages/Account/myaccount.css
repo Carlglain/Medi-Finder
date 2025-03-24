@@ -9,6 +9,9 @@
 .account-content{
     text-align: center;
 }
+.a{
+  color: blue;
+}
 
 @media (min-width: 768px){
    .account-container{

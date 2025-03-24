@@ -11,7 +11,7 @@ import PharmacieList from './Pages/pharmacie/PharmacieList';
 function App() {
   return (
     <div>
-      <NavBar />
+     <NavBar />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/pharmacy' element={<PharmacieList />} />

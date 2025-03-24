@@ -8,7 +8,7 @@ header{
     text-align: center;
     height: max-content;
     justify-content: space-between;
-    background-color: rgb(3, 3, 3);
+    background-color: rgb(5, 5, 5);
     margin: 0px;
     top: 0%;
     left: 0%;
@@ -58,9 +58,9 @@ ul li {
 }
 .na-link.active {
     font-weight: bold;
-    background-color: rgb(249, 209, 109); /* Active link color */
+    background-color: rgb(236, 195, 30); /* Active link color */
     /* border-radius: 25px; */
-    color: rgb(255, 0, 0);
+    color: rgb(140, 107, 249);
     width: fit-content;
   }
 .nav-btn{
@@ -105,7 +105,7 @@ ul li {
         height: 40vh;
         width: 30vw;
         transform: none;
-        z-index: 100;
+        z-index: 1;
        
     }
     .header{

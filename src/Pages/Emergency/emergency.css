@@ -1,3 +1,30 @@
 .emergency-container{
-    margin-top: 35%;
+    margin-top: 25%;
+}
+.mainTitle{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px;
+    width: 70vw;
+    color: white;
+    margin-left: 15%;
+    background: linear-gradient(to right,rgb(227, 63, 63),rgb(240, 112, 112), rgb(244, 191, 191));
+}
+.gov-em-contact{
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(253, 4, 4);
+    font-size: 1.4em;
+    font-weight: bold;
+}
+@media (min-width: 768px){
+    .emergency-container{
+        margin-top: 10%;
+    }
+    .mainTitle{
+        font-size: 2em;
+        width: 80vw;
+        margin-left: 10%;
+    }
 }
